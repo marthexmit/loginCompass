@@ -1,17 +1,20 @@
 <template>
-  <div>
-    <section>
-      <h1>Componente Title</h1>
-      <p>text</p>
-      <h2>Componente Title</h2>
-      <p>Inputs</p>
+  <div class="divLogin">
+    <section class="sectionForm">
+      <form id="formLogin">
+        <div class="describeComponent">
+          <h1>Componente Title</h1>
+          <p>text</p>
+        </div>
+        <div class="registerComponent">
+        <h1>Componente Title</h1>
+        <p>Inputs</p>
+        </div>
+      </form>
     </section>
-    <section>
-      <div>
-      <img :src="require('@/assets/logo.png')" />
-      </div>
-      <div>
-      <img :src="require('@/assets/banner.png')" />
+    <section class="sectionImg">
+      <div class="logoContainer">
+        <img class="imgLogo" src="@/assets/logo.png">
       </div>
     </section>
   </div>
@@ -24,5 +27,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass" scoped>
+@import '@/views/Login/Login.scss'
 </style>
