@@ -7,14 +7,17 @@
           <p>text</p>
         </div>
         <div class="registerComponent">
-        <h1>Componente Title</h1>
+        <h2>Componente Title</h2>
         <p>Inputs</p>
         </div>
       </form>
     </section>
     <section class="sectionImg">
       <div class="logoContainer">
-        <img class="imgLogo" src="@/assets/logo.png">
+        <img class="imgLogo" :src="require('@/assets/logo.png')" />
+      </div>
+      <div class="bannerContainer">
+        <img class="imgBanner" :src="require('@/assets/banner.png')" />
       </div>
     </section>
   </div>
