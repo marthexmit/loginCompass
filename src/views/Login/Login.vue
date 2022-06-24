@@ -3,11 +3,11 @@
     <section class="sectionForm">
       <form id="formLogin">
         <div class="describeComponent">
-          <h1>Componente Title</h1>
+          <titleLogin classTitle="Olá,"/>
           <p>text</p>
         </div>
         <div class="registerComponent">
-        <h2>Componente Title</h2>
+        <titleLogin classTitle="Login" class="secondary"/>
         <p>Inputs</p>
         </div>
       </form>
@@ -25,11 +25,16 @@
 </template>
 
 <script>
-export default {
-  name: "loginPage",
-}
-</script>
+  import titleLogin from "@/components/Title/titleLogin.vue"
 
-<style lang="sass" scoped>
-@import '@/views/Login/Login.scss'
-</style>
+  export default {
+    name: "loginPage",
+    components: {
+      titleLogin
+    }
+  }
+  </script>
+
+  <style lang="sass" scoped>
+  @import '@/views/Login/Login.scss'
+  </style>
