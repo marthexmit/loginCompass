@@ -8,7 +8,7 @@
         </div>
         <div class="registerComponent">
           <h2>Componente Title</h2>
-          <p>Inputs</p>
+          <inputLogin />
           <TextComponent className="regularSize error center" text="Ops, usuário ou senha inválidos. Tente novamente!" />
         </div>
       </form>
@@ -26,12 +26,14 @@
 </template>
 
 <script>
+import InputLogin from '@/components/Input/inputLogin.vue';
 import TextComponent from '@/components/TextComponent/TextComponent.vue';
 export default {
     name: "loginPage",
     components: {
-    TextComponent,
-}
+      TextComponent,
+      InputLogin
+    }
 }
 </script>
 
