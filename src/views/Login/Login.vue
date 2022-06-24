@@ -4,11 +4,12 @@
       <form id="formLogin">
         <div class="describeComponent">
           <h1>Componente Title</h1>
-          <p>text</p>
+          <TextComponent className="regularSize subHello left" text="Para continuar navegando de forma segura, efetue o login na rede." />
         </div>
         <div class="registerComponent">
-        <h2>Componente Title</h2>
-        <inputLogin />
+          <h2>Componente Title</h2>
+          <inputLogin />
+          <TextComponent className="regularSize error center" text="Ops, usuário ou senha inválidos. Tente novamente!" />
         </div>
       </form>
     </section>
@@ -26,9 +27,13 @@
 
 <script>
 import InputLogin from '@/components/Input/inputLogin.vue';
+import TextComponent from '@/components/TextComponent/TextComponent.vue';
 export default {
     name: "loginPage",
-    components: { InputLogin }
+    components: {
+      TextComponent,
+      InputLogin
+    }
 }
 </script>
 
