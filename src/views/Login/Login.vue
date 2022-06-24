@@ -8,7 +8,7 @@
         </div>
         <div class="registerComponent">
         <h2>Componente Title</h2>
-        <p>Inputs</p>
+        <inputLogin />
         </div>
       </form>
     </section>
@@ -25,8 +25,10 @@
 </template>
 
 <script>
+import InputLogin from '@/components/Input/inputLogin.vue';
 export default {
-  name: "loginPage",
+    name: "loginPage",
+    components: { InputLogin }
 }
 </script>
 
