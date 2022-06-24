@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Sizes */
+.lowSize {
+    font-size: 0.75em;
+    line-height: 1.125;
+}
+.mediumLowSize {
+    font-size: 0.875em;
+    line-height: 1.5;
+}
+.regularSize {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.highSize {
+    font-size: 1.5em;
+    line-height: 2.25;
+}
+
+/* Colors */
+.darkColor {
+    color: #222222;
+}
+.lightColor {
+    color: #ffffff;
+}
+
+/* Text alignment */
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+/* Specific text sub hello */
+.subHello {
+    color: #e0e0e0;
+    width: 300px;
+}
+
+/* Specific text error */
+.error {
+    color: #e9b425;
+    width: 280px;
+}
