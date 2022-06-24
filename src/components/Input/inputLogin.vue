@@ -5,7 +5,7 @@
     <input type="text" class="password" placeholder="Senha">
     </div>
     <div class="fakeFotter">
-        <button class="btnLogin">Cadastro</button>
+        <button class="btnLogin">Continuar</button>
     </div>
     
   </div>
