@@ -1,9 +1,18 @@
-.classTitle{
+#titles{
+    display: flex;
+}
+.classTitle2 {
     color: white;
     font-size: 3.75em;
-    line-height: 90px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 }
 
-.secondary{
+.classTitle3 {
+    color: white;
     font-size: 1.87em;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 }
