@@ -1,0 +1,16 @@
+#formLogin {
+    height: 80vh;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;;
+
+    .registerComponent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+}
