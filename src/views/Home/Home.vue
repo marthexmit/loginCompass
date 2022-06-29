@@ -1,5 +1,9 @@
 <template>
-  <h1>Home</h1>
+<div>
+  <header> HEADER IMAGEM CLIMA E RELOGIO</header>
+  <main>BODY IMAGEM TEXTOS</main>
+  <footer>TEXTO CONTADOR 2 BOTÃO</footer>
+</div>
 </template>
 
 <script>
@@ -8,6 +12,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+ @import '@/views/Home/Home.scss';
 </style>
