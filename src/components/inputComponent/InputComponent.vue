@@ -1,26 +1,37 @@
 <template>
   <div>
-    <input class="input inputEmail" v-if="type === 'email'" :type="type" :placeholder="placeholder"/>
-    <input class="input inputPassword" v-else-if="type === 'password'" :type="type" :placeholder="placeholder"/>
+    <input :class="classInput" :type="type" :placeholder="placeholder" @input="valueInputs"/>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
-    name: "InputComponent",
-    props:{
-        type: {
-            type: String
-        },
-        nameClass: {
-            type: String,
-        },
-        placeholder:{
-            type: String,
-            default: 'null',
-        },
+  name: "InputComponent",
+  props: {
+    type: {
+      type: String,
     },
-}
+    classInput: {
+      type: String,
+    },
+    placeholder: {
+      type: String,
+    },
+  },
+  methods: {
+    ...mapActions(['setName', 'setPassword']),
+    valueInputs(e) {
+      if (this.type === "text") {
+        this.setName(e.target.value);
+        console.log(e.target.value)
+      } else if (this.type === "password") {
+        this.setPassword(e.target.value);
+        console.log(e.target.value)
+      }
+    },
+  },
+};
 </script>
 
 <style lang="sass" scoped>
