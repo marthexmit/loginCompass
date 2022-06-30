@@ -3,7 +3,7 @@
     <TextComponent className="mediumLowSize darkColor center" :text="[city, state].join(' - ')" />
     <div class="tempContainer">
         <img :src="require('../../assets/weatherIcons/' + icon + '.svg')" class="wicon" :alt="description + ' icon'" :title="description" />
-        <p class="temp">{{ currentTemp }}°C</p>
+        <p class="temp">{{ currentTemp }}°</p>
     </div>
   </div>
 </template>
@@ -73,7 +73,7 @@ export default {
                     console.log(error);
                  });
 
-            this.currentTemp = data.main.temp;
+            this.currentTemp = Math.round(data.main.temp);
             this.icon = data.weather[0].icon;
             this.description = data.weather[0].description;
             this.city = data.name;
@@ -97,6 +97,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import './WeatherComponent.scss'
 </style>

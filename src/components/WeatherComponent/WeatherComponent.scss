@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#weather {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    .tempContainer {
+        display: flex;
+        gap: 1vw;
+        justify-content: center;
+        align-items: center;
+
+        .temp {
+            font-weight: 700;
+            font-size: 1.7em;
+            line-height: 1.7;
+            margin: 0;
+            color: #222222;
+        }
+
+        .wicon {
+            width: 1.6rem;
+            color: #222222;
+        }
+    }
+}
