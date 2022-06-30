@@ -1,5 +1,5 @@
 <template>
-    <div class="clock">
+    <div id="clock">
         <p class="clockHours">{{ hours }}</p>
         <TextComponent className="mediumLowSize center darkColor" :text="day" />
     </div>
@@ -31,5 +31,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import './ClockComponent.scss';
 </style>
