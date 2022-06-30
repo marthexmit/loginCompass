@@ -9,8 +9,8 @@
     </div>
     <div class="registerComponent">
       <TitleLogin text="Login" type="h3" />
-      <InputComponent type="email" placeholder="Usuário" />
-      <InputComponent type="password" placeholder="Senha" />
+      <InputComponent classInput="input inputName" type="text" placeholder="Usuário" />
+      <InputComponent classInput="input inputPassword" type="password" placeholder="Senha" />
         <TextComponent className="regularSize error center" text="Ops, usuário ou senha inválidos. Tente novamente!"/>
     </div>
   </form>
