@@ -1,0 +1,36 @@
+.Button:hover {
+    cursor: pointer;
+}
+
+.ButtonForm {
+    width: 379px;
+    height: 67px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.125em;
+}
+
+.ButtonKeepBrowsing {
+    width: 131px;
+    height: 99px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    font-size: 0.8em;
+    line-height: 18px;
+    color: #C13216;
+}
+
+.ButtonLogout {
+    width: 129px;
+    height: 100px;
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 18px;
+    color: #fff;
+}
