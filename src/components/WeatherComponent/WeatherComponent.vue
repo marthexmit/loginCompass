@@ -61,7 +61,7 @@ export default {
         async updateWeather() {
             let location = await this.getLocation();
 
-            let url = `http://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&units=metric&APPID=e42ac5a6917f79f0ae69d8cc4947d6cf`
+            let url = `http://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&units=metric&APPID=${process.env.VUE_APP_OPENWEATHER_API_TOKEN}`;
 
             let data = {}
 
@@ -98,5 +98,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './WeatherComponent.scss'
+@import './WeatherComponent.scss';
 </style>
