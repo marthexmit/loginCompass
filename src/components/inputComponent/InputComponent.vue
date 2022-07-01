@@ -20,13 +20,10 @@ export default {
     },
   },
   methods: {
-    ...mapActions(['setName', 'setPassword']),
+    ...mapActions(['setValidate']),
     valueInputs(e) {
-      if (this.type === "text") {
-        this.setName(e.target.value);
-        console.log(e.target.value)
-      } else if (this.type === "password") {
-        this.setPassword(e.target.value);
+      if (this.type === "text" || this.type === "password") {
+        this.setValidate(e.target.value);
         console.log(e.target.value)
       }
     },
