@@ -5,35 +5,24 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    name: "",
-    password: "",
+    // validate: "",
   },
 
   getters: {},
   mutations: {
-    setName(state, name) {
-      state.name = name;
-      if (/^(\w)+\.(\w)+$/.test(name)) {
-        localStorage.setItem("name", name);
-      } else {
-        localStorage.setItem("name", "");
+    setValidate(state, validate){
+      state.validate = validate;
+       if (/^(\w)+\.(\w)+$/.test(validate)){
+        localStorage.setItem("name", validate);
+       }else if (/^\d{6,9}$/.test(validate)){
+       localStorage.setItem("password", validate);
       }
-    },
-    setPassword(state, password) {
-      state.password = password;
-      if (/^\d{6,9}$/.test(password)) {
-        localStorage.setItem("password", password);
-      } else {
-        localStorage.setItem("password", "");
-      }
-    },
+    }
+    
   },
   actions: {
-    setName({ commit }, name) {
-      commit("setName", name);
-    },
-    setPassword({ commit }, password) {
-      commit("setPassword", password);
+    setValidate({ commit }, validate) {
+      commit("setValidate", validate);
     },
   },
   modules: {},
