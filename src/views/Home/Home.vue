@@ -1,14 +1,20 @@
 <template>
 <div>
-  <header> HEADER IMAGEM CLIMA E RELOGIO</header>
+  <header>
+    IMAGEM
+    RELOGIO
+    <WeatherComponent />
+  </header>
   <main>BODY IMAGEM TEXTOS</main>
   <footer>TEXTO CONTADOR 2 BOTÃO</footer>
 </div>
 </template>
 
 <script>
+import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue'
 export default {
   name: "homePage",
+  components: { WeatherComponent }
 }
 </script>
 
