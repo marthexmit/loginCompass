@@ -18,7 +18,7 @@
 
 <script>
 // import InputExemp from "../InputExemp/InputExemp.vue";
-import TitleLogin from "@/components/Title/TitleLogin.vue";
+import TitleLogin from "@/components/Title/titleLogin.vue";
 import TextComponent from "@/components/TextComponent/TextComponent.vue";
 export default {
   name: "FormComponent",
