@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 2vh;
+    box-sizing: border-box;
+
+    * {
+        flex: 1;
+    }
+
+    .logo-container {
+        position: relative;
+
+        .logo-black {
+            width: 200px;
+            position: absolute;
+            left: 2vw;
+        }
+    }
+
+    .clock-container {
+        padding-top: 3vh;
+    }
+
+    .weather-container {
+        position: relative;
+
+        * {
+            position: absolute;
+            right: 3vw;
+        }
+    }
+}

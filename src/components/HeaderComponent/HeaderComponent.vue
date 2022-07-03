@@ -1,8 +1,14 @@
 <template>
-    <header>
-        <img :src="require('../../assets/logo-black.png')" alt="" class="logo-black" />
-        <ClockComponent />
-        <WeatherComponent />
+    <header class="header">
+        <div class="logo-container">
+            <img :src="require('../../assets/logo-black.png')" alt="" class="logo-black" />
+        </div>
+        <div class="clock-container">
+            <ClockComponent />
+        </div>
+        <div class="weather-container">
+            <WeatherComponent />
+        </div>
     </header>
 </template>
 
@@ -18,6 +24,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import './HeaderComponent.scss';
 </style>
