@@ -1,14 +1,20 @@
 <template>
 <div>
-  <header> HEADER IMAGEM CLIMA E RELOGIO</header>
+  <header>
+    IMAGEM
+    <ClockComponent />
+    CLIMA
+  </header>
   <main>BODY IMAGEM TEXTOS</main>
   <footer>TEXTO CONTADOR 2 BOTÃO</footer>
 </div>
 </template>
 
 <script>
+import ClockComponent from '@/components/ClockComponent/ClockComponent.vue';
 export default {
-  name: "homePage",
+    name: "homePage",
+    components: { ClockComponent }
 }
 </script>
 
