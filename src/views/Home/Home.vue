@@ -3,7 +3,7 @@
   <header>
     IMAGEM
     <ClockComponent />
-    CLIMA
+    <WeatherComponent />
   </header>
   <main>BODY IMAGEM TEXTOS</main>
   <footer>TEXTO CONTADOR 2 BOTÃO</footer>
@@ -11,10 +11,14 @@
 </template>
 
 <script>
+import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue';
 import ClockComponent from '@/components/ClockComponent/ClockComponent.vue';
 export default {
-    name: "homePage",
-    components: { ClockComponent }
+  name: "homePage",
+  components: {
+    WeatherComponent,
+    ClockComponent,  
+  }
 }
 </script>
 
