@@ -5,7 +5,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // validate: "",
+    validate: "",
+    name: "",
+    password: "",
   },
 
   getters: {},
@@ -16,7 +18,7 @@ export default new Vuex.Store({
         localStorage.setItem("name", validate);
        }else if (/^\d{6,9}$/.test(validate)){
        localStorage.setItem("password", validate);
-      }
+      } 
     }
     
   },
