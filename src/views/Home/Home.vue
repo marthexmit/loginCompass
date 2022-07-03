@@ -2,7 +2,7 @@
 <div>
   <header>
     IMAGEM
-    RELOGIO
+    <ClockComponent />
     <WeatherComponent />
   </header>
   <main>BODY IMAGEM TEXTOS</main>
@@ -11,10 +11,14 @@
 </template>
 
 <script>
-import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue'
+import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue';
+import ClockComponent from '@/components/ClockComponent/ClockComponent.vue';
 export default {
   name: "homePage",
-  components: { WeatherComponent }
+  components: {
+    WeatherComponent,
+    ClockComponent,  
+  }
 }
 </script>
 
