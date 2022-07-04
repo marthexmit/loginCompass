@@ -19,22 +19,25 @@ const routes = [
   {
     path: '/home',
     name: 'homePage',
-    component: Home
+    component: Home,
   },
   {
     path: '/error401',
     name: 'errorPage401',
-    component: Error401
+    component: Error401,
+   
   },
   {
     path: '*',
     name: 'errorPage404',
     component: Error404
   }
+  
 ]
 
 const router = new VueRouter({
   routes
-})
+});
+
 
 export default router
