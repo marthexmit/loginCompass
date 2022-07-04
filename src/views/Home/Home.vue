@@ -16,6 +16,7 @@
 import HomeFooter from '@/components/HomeFooter/HomeFooter.vue';
 import HomeMain from '@/components/HomeMain/HomeMain.vue';
 import HeaderComponent from '@/components/HeaderComponent/HeaderComponent.vue';
+
 export default {
   name: "homePage",
   components: {
