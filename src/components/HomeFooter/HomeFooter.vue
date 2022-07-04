@@ -8,7 +8,7 @@
         </div>
         <div class="buttons">
         <ButtonComponent classButton="Button" text="Continue navegando" class="ButtonKeepBrowsing"/>
-        <ButtonComponent classButton="Button" text="Logout" class="ButtonLogout"/>
+        <ButtonComponent classButton="Button" text="Logout" class=" logoutAdjust ButtonLogout"/>
         </div>
     </div>
 </template>
