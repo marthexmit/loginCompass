@@ -9,8 +9,8 @@
     </div>
     <div class="registerComponent">
       <TitleLogin text="Login" type="h3" />
-      <!-- <InputExemp type="email" placeholder="Usuário" />
-      <InputExemp type="password" placeholder="Senha" /> -->
+      <InputComponent classInput="input inputName" type="text" placeholder="Usuário" />
+      <InputComponent classInput="input inputPassword" type="password" placeholder="Senha" />
         <TextComponent className="regularSize error center" text="Ops, usuário ou senha inválidos. Tente novamente!"/>
         <ButtonComponent text="Continuar"  classButton="Button ButtonForm"/>
     </div>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-// import InputExemp from "../InputExemp/InputExemp.vue";
-import TitleLogin from "@/components/Title/titleLogin.vue";
+import InputComponent from "../inputComponent/InputComponent.vue";
+import TitleLogin from "@/components/Title/titleLogin.vue"
 import TextComponent from "@/components/TextComponent/TextComponent.vue";
 import ButtonComponent from '../Button/ButtonComponent.vue';
 export default {
@@ -28,7 +28,7 @@ export default {
     TextComponent,
     TitleLogin,
     ButtonComponent,
-    // InputExemp,
+    InputComponent,
   }
 };
 </script>

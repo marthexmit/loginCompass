@@ -1,0 +1,28 @@
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ffff;
+    border-radius: 24px;
+    background-color: #26292C;
+    background-size: 15px;
+    color: #fff;
+    outline: none;
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.inputName {
+    background-image: url('@/assets/Vector.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: calc(100% - 12px);
+}
+
+.inputPassword {
+    background-image: url('@/assets/VectorPassword.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: calc(100% - 12px);
+}
