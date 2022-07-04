@@ -1,23 +1,17 @@
 <template>
 <div>
-  <header>
-    IMAGEM
-    <ClockComponent />
-    <WeatherComponent />
-  </header>
+  <HeaderComponent />
   <main>BODY IMAGEM TEXTOS</main>
   <footer>TEXTO CONTADOR 2 BOTÃO</footer>
 </div>
 </template>
 
 <script>
-import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue';
-import ClockComponent from '@/components/ClockComponent/ClockComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent/HeaderComponent.vue';
 export default {
   name: "homePage",
   components: {
-    WeatherComponent,
-    ClockComponent,  
+    HeaderComponent,
   }
 }
 </script>
