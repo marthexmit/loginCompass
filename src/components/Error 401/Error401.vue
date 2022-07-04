@@ -4,7 +4,7 @@
       <TitleLogin class="titleError" text=Error type="h1" />
       <img src="@/assets/Error401.png" alt="error 401" class="error401">
       <TextComponent class="unauthorized" text="Unauthorized" />
-      <TextComponent class="time" id="teste" :text="'Redirecting in ' + time + ' seconds'"></TextComponent>
+      <TextComponent class="time" id="textRedirect" :text="'Redirecting in ' + time + ' seconds'"></TextComponent>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
   },
   mounted() {
     setTimeout(function () {
-      let a = document.getElementById("teste");
+      let a = document.getElementById("textRedirect");
       a.style = "display:block"
     }, 1000);
     setInterval(this.returnPage, 1000)
