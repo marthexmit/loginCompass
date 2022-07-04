@@ -2,12 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
 }
 .ballImage{
-    display: flex;
     width: 35vw;
-    
+    align-self: flex-end;
 }
 .texts{
     margin-bottom: 1vh;
