@@ -1,5 +1,5 @@
 <template>
-  <button :class="classButton">{{ text }}</button>
+  <button :class="classButton" @click="action">{{ text }}</button>
 </template>
 
 <script>
@@ -12,11 +12,14 @@ export default {
         },
         classButton: {
             type: String
+        },
+        action: {
+            type: Function,
         }
     }
 }
 </script>
 
-<style lang="sass" scoped>
-    @import '@/components/Button/ButtonComponent.scss'
+<style lang="scss" scoped>
+@import './ButtonComponent.scss';
 </style>

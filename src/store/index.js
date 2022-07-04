@@ -8,6 +8,7 @@ export default new Vuex.Store({
     validate: "",
     name: "",
     password: "",
+    timer: 600
   },
   getters: {},
   mutations: {
