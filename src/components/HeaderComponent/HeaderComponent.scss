@@ -1,21 +1,12 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     padding-top: 2vh;
     box-sizing: border-box;
 
-    * {
-        flex: 1;
-    }
-
     .logo-container {
-        position: relative;
-
         .logo-black {
-            width: 200px;
-            position: absolute;
-            left: 2vw;
+            width: 100%;
         }
     }
 
@@ -24,11 +15,20 @@
     }
 
     .weather-container {
-        position: relative;
+        padding-right: 2vw;
 
         * {
-            position: absolute;
-            right: 3vw;
+            float: right;
         }
+    }
+}
+
+@media (max-width: 700px) {
+    .invisible {
+        display: none;
+    }
+
+    .header {
+        grid-template-columns: 1fr 1fr;
     }
 }

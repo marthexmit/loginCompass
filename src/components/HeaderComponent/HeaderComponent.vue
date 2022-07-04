@@ -3,7 +3,7 @@
         <div class="logo-container">
             <img :src="require('../../assets/logo-black.png')" alt="" class="logo-black" />
         </div>
-        <div class="clock-container">
+        <div class="clock-container invisible">
             <ClockComponent />
         </div>
         <div class="weather-container">
