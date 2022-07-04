@@ -1,9 +1,10 @@
 <template>
   <div class="divLogin">
+    <!-- <img :src="require("../../assets/logo.png")" /> -->
     <section class="sectionForm">
       <FormComponent />
     </section>
-    <section class="sectionImg">
+    <section class="sectionImg hide">
       <div class="logoContainer">
         <img class="imgLogo" :src="require('@/assets/logo.png')" />
       </div>
@@ -23,6 +24,6 @@ export default {
     }
 }
 </script>
-<style lang="sass" scoped>
-  @import '@/views/Login/Login.scss'
+<style lang="scss" scoped>
+  @import './Login.scss';
 </style>
