@@ -5,19 +5,23 @@
     <ClockComponent />
     <WeatherComponent />
   </header>
-  <main>BODY IMAGEM TEXTOS</main>
+  <main>
+    <HomeMain />
+  </main>
   <footer>TEXTO CONTADOR 2 BOTÃO</footer>
 </div>
 </template>
 
 <script>
+import HomeMain from '@/components/HomeMain/HomeMain.vue';
 import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue';
 import ClockComponent from '@/components/ClockComponent/ClockComponent.vue';
 export default {
   name: "homePage",
   components: {
     WeatherComponent,
-    ClockComponent,  
+    ClockComponent,
+    HomeMain
   }
 }
 </script>
