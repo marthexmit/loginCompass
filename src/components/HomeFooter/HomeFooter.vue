@@ -1,14 +1,14 @@
 <template>
     <div class="separation">
         <div class="textFirst">
-            <TextComponent text="Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar." />
+            <TextComponent class="infoText" text="Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar." />
         </div>
-        <span id="bar"></span>
+        <div class="counterContainer">
             <TextComponent text="Counter" class="counter"/>
-        
+        </div>
         <div class="buttons">
-        <ButtonComponent class="buttonContinue"/>
-        <ButtonComponent />
+        <ButtonComponent classButton="Button" text="Continue navegando" class="ButtonKeepBrowsing"/>
+        <ButtonComponent classButton="Button" text="Logout" class="ButtonLogout"/>
         </div>
     </div>
 </template>
