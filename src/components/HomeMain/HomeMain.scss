@@ -1,0 +1,35 @@
+.separation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.ballImage{
+    display: flex;
+    width: 35vw;
+    
+}
+.texts{
+    margin-bottom: 1vh;
+    text-align: right;
+    line-height: 1.2;
+    margin-right: 5em;
+    .textPT{
+        color: #222222;
+        font-size: 1.30em;
+        font-weight: 700;
+    }
+    
+    .textEN{
+       
+        color: #C12D18;
+        font-size: 3em;
+        font-weight: 700;
+    }
+    .first {
+        color: #C12D18;
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
