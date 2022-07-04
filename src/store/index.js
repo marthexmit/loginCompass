@@ -9,18 +9,16 @@ export default new Vuex.Store({
     name: "",
     password: "",
   },
-
   getters: {},
   mutations: {
     setValidate(state, validate){
       state.validate = validate;
        if (/^(\w)+\.(\w)+$/.test(validate)){
         localStorage.setItem("name", validate);
-       }else if (/^\d{6,9}$/.test(validate)){
-       localStorage.setItem("password", validate);
+       } else if (/^\d{6,9}$/.test(validate)){
+        localStorage.setItem("password", validate);
       } 
-    }
-    
+    } 
   },
   actions: {
     setValidate({ commit }, validate) {
