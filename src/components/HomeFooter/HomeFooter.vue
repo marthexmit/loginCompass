@@ -4,7 +4,6 @@
             <TextComponent text="Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar." />
         </div>
         <span id="bar"></span>
-        <TextComponent text="Counter" class="counter"/>
         <TimerComponent />
         
         <div class="buttons">

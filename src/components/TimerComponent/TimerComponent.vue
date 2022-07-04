@@ -2,8 +2,8 @@
     <div class="timer-container">
         <TextComponent className="mediumLowSize right" text="Application refresh in" />
         <div class="time">
-            <TextComponent :text="time" className="regularSize" />
-            <TextComponent text="seconds" className="lowSize darkColor" />
+            <TextComponent :text="time" className="highSize" class="time-remaining" />
+            <TextComponent text="seconds" className="lowSize lightColor" />
         </div>
     </div>
 </template>
@@ -36,6 +36,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import './TimerComponent.scss';
 </style>
