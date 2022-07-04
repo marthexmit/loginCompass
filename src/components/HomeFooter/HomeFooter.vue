@@ -7,8 +7,8 @@
           <TimerComponent />
         </div>
         <div class="buttons">
-          <ButtonComponent classButton="Button" :action= "restartTimer" text="Continue navegando" class="ButtonKeepBrowsing"/>
-          <ButtonComponent classButton="Button" text="Logout" class=" logoutAdjust ButtonLogout"/>
+          <ButtonComponent classButton="Button" :clickButton= "restartTimer" text="Continue navegando" class="ButtonKeepBrowsing"/>
+          <ButtonComponent classButton="Button" :clickButton="Return" text="Logout" class=" logoutAdjust ButtonLogout"/>
         </div>
     </div>
 </template>
@@ -26,8 +26,11 @@ export default {
     },
     methods: {
         restartTimer() {
-            this.$store.state.timer = 600;
+            this.$store.state.timer = 601;
         },
+        Return(){
+            this.$router.push('/login')
+        }
     },
 }
 </script>

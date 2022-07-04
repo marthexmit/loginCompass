@@ -39,7 +39,6 @@ export default {
     Validate() {
        if (this.$store.state.control1 == true && this.$store.state.control2 == true){
         this.$router.push('/home')
-        this.$store.state.user = true;
        } else{
            document.getElementById('center').style.display = 'block';
        }
