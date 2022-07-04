@@ -1,0 +1,34 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding-top: 2vh;
+    box-sizing: border-box;
+
+    .logo-container {
+        .logo-black {
+            width: 100%;
+        }
+    }
+
+    .clock-container {
+        padding-top: 3vh;
+    }
+
+    .weather-container {
+        padding-right: 2vw;
+
+        * {
+            float: right;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .invisible {
+        display: none;
+    }
+
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+}

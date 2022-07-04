@@ -1,9 +1,7 @@
 <template>
 <div>
   <header>
-    IMAGEM
-    <ClockComponent />
-    <WeatherComponent />
+    <HeaderComponent />
   </header>
   <main>
     <HomeMain />
@@ -14,13 +12,11 @@
 
 <script>
 import HomeMain from '@/components/HomeMain/HomeMain.vue';
-import WeatherComponent from '@/components/WeatherComponent/WeatherComponent.vue';
-import ClockComponent from '@/components/ClockComponent/ClockComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent/HeaderComponent.vue';
 export default {
   name: "homePage",
   components: {
-    WeatherComponent,
-    ClockComponent,
+    HeaderComponent,
     HomeMain
   }
 }
