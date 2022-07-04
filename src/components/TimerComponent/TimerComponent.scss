@@ -1,0 +1,17 @@
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+    .time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .time-remaining {
+            line-height: 1;
+        }
+    }
+}
