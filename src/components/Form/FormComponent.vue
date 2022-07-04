@@ -19,7 +19,7 @@
 
 <script>
 import InputComponent from "../inputComponent/InputComponent.vue";
-import TitleLogin from "@/components/Title/titleLogin.vue"
+import TitleLogin from "@/components/Title/TitleLogin.vue"
 import TextComponent from "@/components/TextComponent/TextComponent.vue";
 import ButtonComponent from '../Button/ButtonComponent.vue';
 export default {
