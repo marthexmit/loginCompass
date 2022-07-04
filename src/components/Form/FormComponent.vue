@@ -1,5 +1,6 @@
 <template>
   <form id="formLogin">
+    <img src="@/assets/logo.png" alt="" class="logo-form invisible" >
     <div class="describeComponent">
       <TitleLogin text="Olá," type="h2" />
       <TextComponent
@@ -50,6 +51,6 @@ export default {
 
 </script>
 
-<style lang="sass" scoped>
-@import '@/components/Form/FormComponent.scss'
+<style lang="scss" scoped>
+@import '@/components/Form/FormComponent.scss';
 </style>

@@ -14,16 +14,15 @@ export default {
         classButton: {
             type: String
         },
+
         clickButton: {
             type: String,
             default: ""
         },
     },
-    
-  
 };
 </script>
 
-<style lang="sass" scoped>
-    @import '@/components/Button/ButtonComponent.scss'
+<style lang="scss" scoped>
+@import './ButtonComponent.scss';
 </style>

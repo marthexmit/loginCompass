@@ -7,10 +7,13 @@ export default new Vuex.Store({
   state: {
     name: "",
     password: "",
+
     buttonlogin: "",
     control1: "",
     control2: "",
     user: "",
+    timer: 600
+
   },
   getters: {},
   mutations: {

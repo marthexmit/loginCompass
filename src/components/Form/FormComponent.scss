@@ -4,7 +4,11 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+
+    .invisible {
+        display: none;
+    }
 
     .registerComponent {
         display: flex;
@@ -12,7 +16,17 @@
         width: 100%;
         gap: 30px;
     }
+
     .center {
         display: none;
     }
+}   
+
+
+@media (max-width: 700px) {
+    .invisible {
+        display: block !important;
+    }
 }
+    
+
