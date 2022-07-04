@@ -9,23 +9,23 @@
     </div>
     <div class="registerComponent">
       <TitleLogin text="Login" type="h3" />
-      <!-- <InputExemp type="email" placeholder="Usuário" />
-      <InputExemp type="password" placeholder="Senha" /> -->
+      <InputComponent classInput="input inputName" type="text" placeholder="Usuário" />
+      <InputComponent classInput="input inputPassword" type="password" placeholder="Senha" />
         <TextComponent className="regularSize error center" text="Ops, usuário ou senha inválidos. Tente novamente!"/>
     </div>
   </form>
 </template>
 
 <script>
-// import InputExemp from "../InputExemp/InputExemp.vue";
-import TitleLogin from "@/components/Title/TitleLogin.vue";
+import InputComponent from "../inputComponent/InputComponent.vue";
+import TitleLogin from "@/components/Title/TitleLogin.vue"
 import TextComponent from "@/components/TextComponent/TextComponent.vue";
 export default {
   name: "FormComponent",
   components: {
     TextComponent,
     TitleLogin,
-    // InputExemp,
+    InputComponent,
   }
 };
 </script>
