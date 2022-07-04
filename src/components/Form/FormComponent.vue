@@ -42,11 +42,6 @@ export default {
        } else{
            document.getElementById('center').style.display = 'block';
        }
-       const a = localStorage.getItem("name", "");
-       const b = localStorage.getItem("password", "");
-       if (a && b == true){
-        this.$router.push('/error401')
-       }
     },
   },
  
