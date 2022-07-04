@@ -1,17 +1,25 @@
-.separation {
+.secTexts {
+    height: 600px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
 }
+
 .ballImage{
-    width: 35vw;
+    width: 25vw;
     align-self: flex-end;
+    position: fixed;
+    bottom: 10vh;
 }
 .texts{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1vh;
     text-align: right;
     line-height: 1.2;
     margin-right: 5em;
+    justify-content: center;
     .textPT{
         color: #222222;
         font-size: 1.30em;
@@ -31,3 +39,14 @@
     }
 }
 
+@media (max-width: 700px) {
+    .secTexts {
+        display: none;
+    }
+
+    .ballImage {
+        width: 90vw !important;
+        left: -20px;
+    }
+
+}
