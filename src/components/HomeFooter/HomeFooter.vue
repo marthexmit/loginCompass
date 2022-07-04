@@ -7,7 +7,7 @@
           <TimerComponent />
         </div>
         <div class="buttons">
-          <ButtonComponent classButton="Button" :action:"restartTimer" text="Continue navegando" class="ButtonKeepBrowsing"/>
+          <ButtonComponent classButton="Button" :action= "restartTimer" text="Continue navegando" class="ButtonKeepBrowsing"/>
           <ButtonComponent classButton="Button" text="Logout" class=" logoutAdjust ButtonLogout"/>
         </div>
     </div>
