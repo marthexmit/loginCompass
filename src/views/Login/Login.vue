@@ -1,6 +1,5 @@
 <template>
   <div class="divLogin">
-    <!-- <img :src="require("../../assets/logo.png")" /> -->
     <section class="sectionForm">
       <FormComponent />
     </section>
