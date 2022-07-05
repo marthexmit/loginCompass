@@ -2,7 +2,7 @@
     <div class="timer-container">
         <TextComponent className="mediumLowSize right" text="Application refresh in" />
         <div class="time">
-            <TextComponent :text="time" className="highSize" class="time-remaining" />
+            <TextComponent :text="String(time)" className="highSize" class="time-remaining" />
             <TextComponent text="seconds" className="lowSize lightColor" />
         </div>
     </div>
